@@ -1,0 +1,7 @@
+const OK_STATUS_CODE = 200;
+const CREATED_STATUS_CODE = 201;
+
+module.exports = {
+  OK_STATUS_CODE,
+  CREATED_STATUS_CODE,
+};

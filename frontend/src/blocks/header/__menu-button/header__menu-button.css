@@ -1,0 +1,18 @@
+.header__menu-button {
+  display: none;
+  position: relative;
+  height: 21px;
+  width: 24px;
+  margin-right: 30px;
+
+  background-color: #000;
+  border: none;
+  padding: 0;
+}
+
+@media (max-width: 443px) {
+
+  .header__menu-button {
+    display: block;
+  }
+}

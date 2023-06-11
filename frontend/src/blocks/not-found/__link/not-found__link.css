@@ -1,0 +1,8 @@
+.not-found__link {
+  text-decoration: none;
+  margin: 0 36px;
+
+  font-size: 18px;
+  line-height: 22px;
+  color: #000;
+}

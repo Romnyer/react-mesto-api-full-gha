@@ -1,0 +1,14 @@
+.login__entry-link {
+  padding: 0 0 0 5px;
+  background-color: #000;
+  transition-property: opacity;
+  transition-duration: 1s;
+
+  color: #fff;
+  text-decoration: none;
+}
+
+.login__entry-link:hover {
+  opacity: .6;
+}
+

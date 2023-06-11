@@ -1,0 +1,17 @@
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 443px) {
+  .header__menu {
+    width: calc(100vw - 38px);
+  }
+}
+
+@media (max-width: 320px) {
+  .header__menu {
+    width: 100%;
+  }
+}

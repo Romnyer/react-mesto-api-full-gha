@@ -1,0 +1,11 @@
+.header__menu-pic {
+  display: block;
+  width: 24px;
+  height: 21px;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  transition-property: opacity;
+  transition-duration: .6s;
+}

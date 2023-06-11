@@ -1,0 +1,38 @@
+.header__container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  position: relative;
+}
+
+@media (max-width: 443px) {
+
+  .header__container {
+    display: flex;
+    top: -140px;
+    bottom: 0;
+    width: 100%;
+    flex-direction: column;
+    gap: 18px;
+    padding-bottom: 67px;
+
+    transition-property: top;
+    transition-duration: 1s;
+  }
+
+  .header__container::after {
+    content: '';
+    width: 100%;
+    max-width: calc(100vw - 38px);
+    position: absolute;
+    bottom: 27px;
+    border-bottom: 1px solid rgba(84, 84, 84, .7);
+  }
+}
+
+@media (max-width: 320px) {
+
+  .header__container::after {
+    max-width: 320px;
+  }
+}
