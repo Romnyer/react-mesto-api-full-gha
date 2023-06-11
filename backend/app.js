@@ -27,7 +27,7 @@ app.use(hemlet());
 app.use(limiter);
 
 // Connect to data base
-mongoose.connect('mongodb://0.0.0.0:27017/mestodb', {});
+mongoose.connect('mongodb://127.0.0.1:27017/mestodb', {});
 
 // Parser
 app.use(express.json());
