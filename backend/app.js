@@ -1,6 +1,6 @@
 require('dotenv').config();
 const express = require('express');
-const cors = require('cors');
+// const cors = require('cors');
 const mongoose = require('mongoose');
 const { errors } = require('celebrate');
 const hemlet = require('helmet');
@@ -27,7 +27,7 @@ const app = express();
 // Safety
 app.use(hemlet());
 app.use(limiter);
-app.use(cors());
+// app.use(cors());
 
 // Connect to data base
 mongoose.connect('mongodb://127.0.0.1:27017/mestodb', {});
