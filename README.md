@@ -9,8 +9,8 @@
 
 ## Ссылки на проект
 
-IP-адрес x.x.x.x
+IP-адрес 158.160.72.49
 
-Frontend https://...
+Frontend https://reynmor.nomoredomains.rocks
 
-Backend https://...
+Backend https://api.reynmor.nomoredomains.rocks
