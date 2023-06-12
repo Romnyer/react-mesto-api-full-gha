@@ -8,7 +8,7 @@ const {
   CREATED_STATUS_CODE,
 } = require('../constants/constants');
 
-const { NODE_ENV, JWT_SECRET } = process.env;
+const { NODE_ENV, JWT_CODE } = process.env;
 
 const NotFoundError = require('../errors/notFoundError');
 const BadRequestError = require('../errors/badRequestError');
@@ -71,7 +71,7 @@ module.exports.login = (req, res, next) => {
 
           const token = jwt.sign(
             { _id: user._id },
-            NODE_ENV === 'production' ? JWT_SECRET : 'secret-key',
+            NODE_ENV === 'production' ? JWT_CODE : 'secret-key',
             { expiresIn: '7d' },
           );
 
