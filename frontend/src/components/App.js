@@ -195,6 +195,10 @@ function App() {
     setSignInLoading(true);
     auth.signIn(email, password)
       .then(data => {
+        if (!data) {
+          throw new Error('Что-то пошло не так!');
+        }
+
         localStorage.setItem('jwtToken', data.token);
         setEmail(email);
 
@@ -214,6 +218,10 @@ function App() {
     setSignUpLoading(true);
     auth.signUp(email, password)
       .then(data => {
+        if (!data) {
+          throw new Error('Что-то пошло не так!');
+        }
+
         setTooltipOpen(true);
         setSuccessTooltipStatus(true);
         navigate('/', {replace: true});
