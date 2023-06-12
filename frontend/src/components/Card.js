@@ -1,10 +1,9 @@
 function Card({card, userId, onCardClick, onCardLike, onCardDelete}) {
-  const isOwn = card.owner._id === userId,
-        isLiked = card.likes.some(like => like._id === userId);
+  const isOwn = card.owner === userId,
+        isLiked = card.likes.some(like => like === userId);
 
   function handleClick() {
     onCardClick(card);
-    console.log(card.owner._id, userId)
   };
 
   function handleLike() {

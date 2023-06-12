@@ -18,8 +18,8 @@ class Auth {
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        "password": password,
-        "email": email
+        "email": email,
+        "password": password
       })
     })
     .then(res => this.handleResponse(res));
@@ -30,8 +30,8 @@ class Auth {
       method: 'POST',
       headers: this._headers,
       body: JSON.stringify({
-        "password": password,
-        "email": email
+        "email": email,
+        "password": password
       })
     })
     .then(res => this.handleResponse(res));
@@ -50,7 +50,7 @@ class Auth {
 };
 
 const auth = new Auth({
-  baseUrl: 'https://auth.nomoreparties.co',
+  baseUrl: 'https://api.reynmor.nomoredomains.rocks',
   headers: {
     "Content-Type": "application/json"
   }

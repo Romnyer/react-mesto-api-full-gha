@@ -100,10 +100,12 @@ class Api {
   }
 }
 
+const token = localStorage.getItem('jwtToken');
 const api = new Api({
   baseUrl: 'https://api.reynmor.nomoredomains.rocks',
   headers: {
-    'Content-Type': 'application/json'
+    'Content-Type': 'application/json',
+    "authorization": `Bearer ${token}`,
   }
 })
 
