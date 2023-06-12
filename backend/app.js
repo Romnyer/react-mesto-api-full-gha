@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const { errors } = require('celebrate');
+const cors = require('cors');
 const hemlet = require('helmet');
 const rateLimit = require('express-rate-limit');
 
@@ -25,6 +26,7 @@ const app = express();
 // Safety
 app.use(hemlet());
 app.use(limiter);
+app.use(cors());
 
 // Connect to data base
 mongoose.connect('mongodb://127.0.0.1:27017/mestodb', {});
