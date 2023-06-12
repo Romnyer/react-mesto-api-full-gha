@@ -27,7 +27,14 @@ const app = express();
 // Safety
 app.use(hemlet());
 app.use(limiter);
-app.use(cors());
+app.use(cors({
+  origin: [
+    'http://localhost:3001',
+    'https://reynmor.nomoredomains.rocks',
+  ],
+  credentials: true,
+  maxAge: 30,
+}));
 
 // Connect to data base
 mongoose.connect('mongodb://127.0.0.1:27017/mestodb', {});
