@@ -1,7 +1,7 @@
 {
   "name": "express-mesto-gha",
   "author": "Artem",
-  "homepage": "https://romnyer.github.io/express-mesto-gha/",
+  "homepage": ".",
   "dependencies": {
     "bcrypt": "^5.1.0",
     "celebrate": "^15.0.1",

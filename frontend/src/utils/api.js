@@ -101,9 +101,8 @@ class Api {
 }
 
 const api = new Api({
-  baseUrl: 'https://mesto.nomoreparties.co/v1/cohort-60',
+  baseUrl: 'https://api.reynmor.nomoredomains.rocks',
   headers: {
-    authorization: '8d27ca59-0126-499c-9b8e-533fb5ecd75b',
     'Content-Type': 'application/json'
   }
 })
